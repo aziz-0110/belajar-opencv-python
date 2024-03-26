@@ -3,7 +3,7 @@ import cv2
 def canny(imgPath):
     img = cv2.imread(imgPath)
 
-    # kalibrasi canny untuk histologi
+    # kalibrasi canny untuk riset histologi
     edges = cv2.Canny(img, 280, 300)
 
     cv2.imshow("Canny", edges)
